@@ -11,7 +11,7 @@ function playSound(e) {
     audio.play();
     setTimeout(() => {
         key.classList.remove('playing');
-    }, 120); // 0.07 seconds in milliseconds is 70 milliseconds
+    }, 120);
     
 }
 
