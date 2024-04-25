@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Hero">
+        <div class="heading">
+            <h1>Update CSS Variables With <span>JS</span></h1>
+        </div>
+        <div class="controls">
+            <label for="spacing"> Spacing:- </label>
+            <input type="range" name="spacing" min="10" max="200" value="20" data-sizing="px">
+
+            <label for="Blur"> Blur:- </label>
+            <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+            <label class="colorsbg" for="base"> Base color </label>
+            <input type="color" name="base" value="#ffc600">
+        </div>
+        <div class="image">
+            <img src="greg-rakozy-oMpAz-DN-9I-unsplash.jpg" alt="KILLER YT">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
