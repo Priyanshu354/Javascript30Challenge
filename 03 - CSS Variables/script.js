@@ -8,5 +8,5 @@ function handleChanges() {
 }
 
 inputs.forEach(input => input.addEventListener('change', handleChanges));
-// inputs.forEach(input => input.addEventListener('mousemove', handleChanges));
+inputs.forEach(input => input.addEventListener('mousemove', handleChanges));
 
