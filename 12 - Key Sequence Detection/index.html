@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Key Detection</title>
+  </head>
+  <body>
+    <script>
+      let pressed = "";
+      const secretCode = "killer";
+
+      window.addEventListener("keyup", (e) => {
+        if (e.key >= "a" && e.key <= "z") {
+          pressed += e.key;
+        } else {
+          pressed = "";
+        }
+        console.log(pressed);
+        if (pressed.length === secretCode.length) {
+          if (pressed === secretCode) {
+            let p1 = document.createElement("h1");
+            p1.innerText = "You cracked it, congrats!...";
+            document.body.appendChild(p1);
+            console.log(secretCode);
+          }
+          pressed = "";
+        }
+      });
+    </script>
+  </body>
+</html>
