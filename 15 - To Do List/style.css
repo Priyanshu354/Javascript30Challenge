@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #0A69D4, #56CCF2);
+}
+
+.design-font1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+}
+
+
+.design-font2 {
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-img{
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.3rem 0.3rem 0.1rem 0rem rgba(177, 177, 177, 0.2);
+    padding: 3rem 3rem 1rem 3rem;
+    background-color: #fefdfc;
+}
+
+.logo-text{
+    font-size: 3rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.hero{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.inputting{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-type{
+    font-size: 3rem;
+}
+
+option{
+    font-size: 2rem;
+}
+
+.custom-select {
+    appearance: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+}
+
+.custom-select option {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.input-filed{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #edeef0;
+    border-radius: 4rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.task-input{
+    font-size: 2rem;
+    height: 4rem;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.taskAddBtn{
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    padding: 1.6rem 4rem;
+    background: #ff5945;
+    color: #ffff;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+@media (min-width: 200px) and (max-width: 450px) {
+    /* CSS rules */
+    *{
+        font-size: 5px;
+    }
+    .hero{
+        width: 100vw;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    
+}
+
+.DueDate{
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+}
+
+.deadline{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.deadline-date{
+    margin: 0.5rem;
+    padding: 0.4rem;
+    appearance: none;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: #edeef0;
+    cursor: pointer;
+}
+
+.taskMangement{
+    margin : 10rem 10rem 0rem 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.headingGoal{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.2em;
+}
+
+
+.taskCard{
+    width : 45rem;
+    max-height: 30rem; 
+    overflow-y: auto;
+    background-color: #ffffff;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.4rem rgba(80, 73, 73,0.2);
+}
+
+.tasks{
+    display: flex;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.taskmange{
+    display: flex;
+    padding: 2rem;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+
+.checkbox {
+    display: inline-block;
+    width: 3rem; /* Adjust size as needed */
+    height: 3rem; /* Adjust size as needed */
+    background-color: #fff;
+    border: 2px solid #000; /* Border color */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+}
+
+.taskText{
+    font-size: 2rem;
+    padding-top: 0.3rem;
+    color: rgb(37, 34, 30);
+}
+
+
+.goals{
+    font-size: 2rem;
+    text-align: start;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-weight: 100;
+}
+
+.deadText{
+    font-size: 2rem;
+}
+
+.cross{
+    height: 3rem;
+    cursor: pointer;
+}
+
+.taskCard:hover{
+    transform: rotate(-5deg);
+    transition: all 0.7s ease-in-out 0.1s;
+}
+
+.addclicktrans{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+@media (min-width: 450px) and (max-width: 850px) {
+    /* CSS rules */
+    *{
+        font-size: 7px;
+    }
+    .hero{
+        width: 100vw;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.8)
+  }
+  
+
+.checked {
+    background-color: black;/* Fully opaque */
+    border-radius: 50%;
+}
+
+.taskCard {
+    transition: opacity 0.5s ease-out; /* Example transition */
+}
+
+.taskCard.removing {
+    opacity: 0;
+}

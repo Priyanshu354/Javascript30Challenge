@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <nav>
+            <div class="logo">
+                <img class="logo-img" src="images/logo.png" alt="TO DO LIST">
+            </div>
+            <div>
+                <h1 class="design-font1 logo-text" >TO-DO-LIST</h1>
+            </div>
+        </nav>
+
+        <section class="hero">
+
+            <div class="inputting">
+                <div class="Goals-Type ">
+                    <select class="design-font1  
+                    custom-select " name="Task-Type" id="task-type">
+                        <option value="" >Choose Your Goals Section</option>
+                        <option value="Personal Goal">Personal Goals</option>
+                        <option value="Fitness Goal">Fitness Goals</option>
+                        <option value="Carrer Goal">Carrer Goals</option>
+                        <option value="Family Goal">Family Goals</option>
+                    </select>
+                </div>
+
+                <div class="input-filed">
+                    <input type="text" class="task-input design-font2" placeholder="Add Your Task">
+                    <div class="DueDate">
+                        <label class="deadline design-font1" for="deadline">Dead Line:-</label>
+                        <input class="deadline-date design-font1" type="date" id="deadline">
+                    </div>
+                    <button class="taskAddBtn design-font1 "  id="AddBtn">Add</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="taskMangement">
+        </section>
+
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
