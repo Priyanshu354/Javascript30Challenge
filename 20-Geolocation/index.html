@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>Your Location</h1>
+    </div>
+
+    <script>
+        const heroElements = document.getElementsByClassName('hero');
+
+        console.log(heroElements);
+        function gotlocation(position) {
+            console.log(position);
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            console.log("Got location:", latitude, longitude);
+
+            // here i can fecth any API For getting adjact locatiton
+            console.log(heroElements.length);
+            for (let i = 0; i < heroElements.length; i++) {
+                heroElements[i].textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+            }
+        }
+
+        function failedlocation() {
+            console.log("Failed to get location");
+            for (let i = 0; i < heroElements.length; i++) {
+                heroElements[i].textContent = "Failed to get location";
+            }
+        }
+
+        navigator.geolocation.getCurrentPosition(gotlocation, failedlocation);
+
+    </script>
+</body>
+</html>
